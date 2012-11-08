@@ -75,7 +75,7 @@
     
     if (aTableView)
     {
-        [self.packingListItems count];
+        rows = [self.packingListItems count];
     }
     return rows;
     
@@ -94,13 +94,9 @@ static NSString *const kMyCellReuseIdentifier = @"kMyCellReuseIdentifier";
     }
     
     //
-    NSDictionary *packingListItemDictionary = nil;
-    if ([aTableView isEqual:self.searchDisplayController.searchResultsTableView])
-    {
-       packingListItemDictionary = [self.packingListItems objectAtIndex:indexPath.row];
-    }
+    NSDictionary *packingListItemDictionary = [self.packingListItems objectAtIndex:indexPath.row];
        
-    NSString *item = [packingListItemDictionary objectForKey:@"itemName"];
+    NSString *itemName = [packingListItemDictionary objectForKey:@"itemName"];
     NSString *itemDetails = [packingListItemDictionary objectForKey:@"itemDetail"];
     cell.textLabel.text = item;
     
