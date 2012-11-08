@@ -42,6 +42,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UISwipeGestureRecognizer *swipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDidOccurWithGestureRecognizer:)];
+    [self.view addGestureRecognizer:swipeGestureRecognizer];
 }
 
 - (void)viewDidUnload
@@ -55,6 +57,19 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+#pragma mark -
+
+- (void) swipeDidOccurWithGestureRecognizer: (UISwipeGestureRecognizer *)recognizer
+{
+    
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
+        
+        [self.navigationController popViewControllerAnimated:YES];
+        
+    }
+}
+
 
 #pragma mark - UITableViewDataSource
 

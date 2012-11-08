@@ -13,14 +13,17 @@
 
 @implementation RTAppDelegate
 
-@synthesize tabBarController = myTabBarController;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
     RTPackingListViewController *packingListViewController = [[RTPackingListViewController alloc] initWithNibName:@"RTPackingListViewController" bundle:nil];
+    UINavigationController *packingListNavigationController = [[UINavigationController alloc] initWithRootViewController: packingListViewController];
+    
     RTActivitiesViewController *activitiesListViewController = [[RTActivitiesViewController alloc] initWithNibName:@"RTActivitiesViewController" bundle:nil];
+    UINavigationController *activitiesListNavigationController = [[UINavigationController alloc] initWithRootViewController: activitiesListViewController];
+    
     RTMapViewController *mapViewController = [[RTMapViewController alloc] initWithNibName:@"RTMapViewController" bundle:nil];
+    UINavigationController *mapNavigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
     
     packingListViewController.title = @"Packing List";
     activitiesListViewController.title = @"Activities";
@@ -36,15 +39,15 @@
     mapViewController.tabBarItem = mapTabBarItem;
     
     
-    myTabBarController = [[UITabBarController alloc] init];
+    self.tabBarController = [[UITabBarController alloc] init];
     
-    myTabBarController.viewControllers = [NSArray arrayWithObjects:packingListViewController, activitiesListViewController, mapViewController, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:packingListNavigationController, activitiesListNavigationController, mapNavigationController, nil];
 
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    self.window.rootViewController = myTabBarController;
+    self.window.rootViewController = self.tabBarController;
     
     [self.window makeKeyAndVisible];
     return YES;
