@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5644072C164C0DB800DAD8C0 /* packing-list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5644072B164C0DB800DAD8C0 /* packing-list.plist */; };
+		56440731164C14E200DAD8C0 /* RTPackingListItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5644072F164C14E200DAD8C0 /* RTPackingListItemViewController.m */; };
+		56440732164C14E200DAD8C0 /* RTPackingListItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56440730164C14E200DAD8C0 /* RTPackingListItemViewController.xib */; };
 		5657DE3B164B120D00781CEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5657DE3A164B120D00781CEF /* UIKit.framework */; };
 		5657DE3D164B120D00781CEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5657DE3C164B120D00781CEF /* Foundation.framework */; };
 		5657DE3F164B120D00781CEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5657DE3E164B120D00781CEF /* CoreGraphics.framework */; };
 		5657DE45164B120D00781CEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5657DE43164B120D00781CEF /* InfoPlist.strings */; };
 		5657DE47164B120D00781CEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5657DE46164B120D00781CEF /* main.m */; };
 		5657DE4B164B120D00781CEF /* RTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5657DE4A164B120D00781CEF /* RTAppDelegate.m */; };
+		5657DE61164B181000781CEF /* RTPackingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5657DE5F164B181000781CEF /* RTPackingListViewController.m */; };
+		5657DE62164B181000781CEF /* RTPackingListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5657DE60164B181000781CEF /* RTPackingListViewController.xib */; };
+		5657DE64164B1B9C00781CEF /* packinglisticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5657DE63164B1B9C00781CEF /* packinglisticon.png */; };
+		5657DE68164B290800781CEF /* RTActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5657DE66164B290800781CEF /* RTActivitiesViewController.m */; };
+		5657DE69164B290800781CEF /* RTActivitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5657DE67164B290800781CEF /* RTActivitiesViewController.xib */; };
+		5657DE6D164B291600781CEF /* RTMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5657DE6B164B291600781CEF /* RTMapViewController.m */; };
+		5657DE6E164B291600781CEF /* RTMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5657DE6C164B291600781CEF /* RTMapViewController.xib */; };
+		5657DE70164B299400781CEF /* activitiesicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5657DE6F164B299400781CEF /* activitiesicon.png */; };
+		5657DE72164B2B5E00781CEF /* mapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5657DE71164B2B5E00781CEF /* mapicon.png */; };
+		5657DE74164B386C00781CEF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5657DE73164B386C00781CEF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5644072B164C0DB800DAD8C0 /* packing-list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "packing-list.plist"; path = "../packing-list.plist"; sourceTree = "<group>"; };
+		5644072E164C14E200DAD8C0 /* RTPackingListItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPackingListItemViewController.h; sourceTree = "<group>"; };
+		5644072F164C14E200DAD8C0 /* RTPackingListItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPackingListItemViewController.m; sourceTree = "<group>"; };
+		56440730164C14E200DAD8C0 /* RTPackingListItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTPackingListItemViewController.xib; sourceTree = "<group>"; };
 		5657DE36164B120D00781CEF /* RoadTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5657DE3A164B120D00781CEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5657DE3C164B120D00781CEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -26,6 +43,19 @@
 		5657DE48164B120D00781CEF /* RoadTrip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoadTrip-Prefix.pch"; sourceTree = "<group>"; };
 		5657DE49164B120D00781CEF /* RTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTAppDelegate.h; sourceTree = "<group>"; };
 		5657DE4A164B120D00781CEF /* RTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTAppDelegate.m; sourceTree = "<group>"; };
+		5657DE5E164B181000781CEF /* RTPackingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPackingListViewController.h; sourceTree = "<group>"; };
+		5657DE5F164B181000781CEF /* RTPackingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPackingListViewController.m; sourceTree = "<group>"; };
+		5657DE60164B181000781CEF /* RTPackingListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTPackingListViewController.xib; sourceTree = "<group>"; };
+		5657DE63164B1B9C00781CEF /* packinglisticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = packinglisticon.png; sourceTree = "<group>"; };
+		5657DE65164B290800781CEF /* RTActivitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTActivitiesViewController.h; sourceTree = "<group>"; };
+		5657DE66164B290800781CEF /* RTActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTActivitiesViewController.m; sourceTree = "<group>"; };
+		5657DE67164B290800781CEF /* RTActivitiesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTActivitiesViewController.xib; sourceTree = "<group>"; };
+		5657DE6A164B291600781CEF /* RTMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMapViewController.h; sourceTree = "<group>"; };
+		5657DE6B164B291600781CEF /* RTMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMapViewController.m; sourceTree = "<group>"; };
+		5657DE6C164B291600781CEF /* RTMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTMapViewController.xib; sourceTree = "<group>"; };
+		5657DE6F164B299400781CEF /* activitiesicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activitiesicon.png; sourceTree = "<group>"; };
+		5657DE71164B2B5E00781CEF /* mapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapicon.png; sourceTree = "<group>"; };
+		5657DE73164B386C00781CEF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5657DE74164B386C00781CEF /* MapKit.framework in Frameworks */,
 				5657DE3B164B120D00781CEF /* UIKit.framework in Frameworks */,
 				5657DE3D164B120D00781CEF /* Foundation.framework in Frameworks */,
 				5657DE3F164B120D00781CEF /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +93,7 @@
 		5657DE39164B120D00781CEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5657DE73164B386C00781CEF /* MapKit.framework */,
 				5657DE3A164B120D00781CEF /* UIKit.framework */,
 				5657DE3C164B120D00781CEF /* Foundation.framework */,
 				5657DE3E164B120D00781CEF /* CoreGraphics.framework */,
@@ -74,6 +106,22 @@
 			children = (
 				5657DE49164B120D00781CEF /* RTAppDelegate.h */,
 				5657DE4A164B120D00781CEF /* RTAppDelegate.m */,
+				5657DE5E164B181000781CEF /* RTPackingListViewController.h */,
+				5657DE5F164B181000781CEF /* RTPackingListViewController.m */,
+				5657DE60164B181000781CEF /* RTPackingListViewController.xib */,
+				5644072E164C14E200DAD8C0 /* RTPackingListItemViewController.h */,
+				5644072F164C14E200DAD8C0 /* RTPackingListItemViewController.m */,
+				56440730164C14E200DAD8C0 /* RTPackingListItemViewController.xib */,
+				5657DE65164B290800781CEF /* RTActivitiesViewController.h */,
+				5657DE66164B290800781CEF /* RTActivitiesViewController.m */,
+				5657DE67164B290800781CEF /* RTActivitiesViewController.xib */,
+				5657DE6A164B291600781CEF /* RTMapViewController.h */,
+				5657DE6B164B291600781CEF /* RTMapViewController.m */,
+				5657DE6C164B291600781CEF /* RTMapViewController.xib */,
+				5657DE63164B1B9C00781CEF /* packinglisticon.png */,
+				5657DE6F164B299400781CEF /* activitiesicon.png */,
+				5657DE71164B2B5E00781CEF /* mapicon.png */,
+				5644072B164C0DB800DAD8C0 /* packing-list.plist */,
 				5657DE41164B120D00781CEF /* Supporting Files */,
 			);
 			path = RoadTrip;
@@ -143,6 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5657DE45164B120D00781CEF /* InfoPlist.strings in Resources */,
+				5657DE62164B181000781CEF /* RTPackingListViewController.xib in Resources */,
+				5657DE64164B1B9C00781CEF /* packinglisticon.png in Resources */,
+				5657DE69164B290800781CEF /* RTActivitiesViewController.xib in Resources */,
+				5657DE6E164B291600781CEF /* RTMapViewController.xib in Resources */,
+				5657DE70164B299400781CEF /* activitiesicon.png in Resources */,
+				5657DE72164B2B5E00781CEF /* mapicon.png in Resources */,
+				5644072C164C0DB800DAD8C0 /* packing-list.plist in Resources */,
+				56440732164C14E200DAD8C0 /* RTPackingListItemViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +211,10 @@
 			files = (
 				5657DE47164B120D00781CEF /* main.m in Sources */,
 				5657DE4B164B120D00781CEF /* RTAppDelegate.m in Sources */,
+				5657DE61164B181000781CEF /* RTPackingListViewController.m in Sources */,
+				5657DE68164B290800781CEF /* RTActivitiesViewController.m in Sources */,
+				5657DE6D164B291600781CEF /* RTMapViewController.m in Sources */,
+				56440731164C14E200DAD8C0 /* RTPackingListItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +322,7 @@
 				5657DE50164B120D00781CEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

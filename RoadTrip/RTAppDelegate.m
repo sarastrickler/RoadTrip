@@ -7,14 +7,45 @@
 //
 
 #import "RTAppDelegate.h"
+#import "RTPackingListViewController.h"
+#import "RTActivitiesViewController.h"
+#import "RTMapViewController.h"
 
 @implementation RTAppDelegate
 
+@synthesize tabBarController = myTabBarController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    RTPackingListViewController *packingListViewController = [[RTPackingListViewController alloc] initWithNibName:@"RTPackingListViewController" bundle:nil];
+    RTActivitiesViewController *activitiesListViewController = [[RTActivitiesViewController alloc] initWithNibName:@"RTActivitiesViewController" bundle:nil];
+    RTMapViewController *mapViewController = [[RTMapViewController alloc] initWithNibName:@"RTMapViewController" bundle:nil];
+    
+    packingListViewController.title = @"Packing List";
+    activitiesListViewController.title = @"Activities";
+    mapViewController.title = @"Map";
+    
+    UITabBarItem *packingListTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Packing List" image:[UIImage imageNamed:@"packinglisticon.png"] tag:1];
+    UITabBarItem *activitiesTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Activities" image:[UIImage imageNamed:@"activitiesicon.png"] tag:2];
+    UITabBarItem *mapTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Map" image:[UIImage imageNamed:@"mapicon.png"] tag:3];
+    
+    
+    packingListViewController.tabBarItem = packingListTabBarItem;
+    activitiesListViewController.tabBarItem = activitiesTabBarItem;
+    mapViewController.tabBarItem = mapTabBarItem;
+    
+    
+    myTabBarController = [[UITabBarController alloc] init];
+    
+    myTabBarController.viewControllers = [NSArray arrayWithObjects:packingListViewController, activitiesListViewController, mapViewController, nil];
+
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.window.rootViewController = myTabBarController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
