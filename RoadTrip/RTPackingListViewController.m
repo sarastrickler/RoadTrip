@@ -98,7 +98,7 @@ static NSString *const kMyCellReuseIdentifier = @"kMyCellReuseIdentifier";
        
     NSString *itemName = [packingListItemDictionary objectForKey:@"itemName"];
     NSString *itemDetails = [packingListItemDictionary objectForKey:@"itemDetail"];
-    cell.textLabel.text = item;
+    cell.textLabel.text = itemName;
     
     return cell;
     
