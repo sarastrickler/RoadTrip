@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>San Francisco, CA</string>
+		<key>latitude</key>
+		<real>37.708333</real>
+		<key>longitude</key>
+		<real>-122.280278</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Los Angeles, CA</string>
+		<key>latitude</key>
+		<real>34.11</real>
+		<key>longitude</key>
+		<real>-118.41</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Sedona, AZ</string>
+		<key>latitude</key>
+		<real>34.8697395</real>
+		<key>longitude</key>
+		<real>-111.7609896</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Santa Fe, NM</string>
+		<key>latitude</key>
+		<real>35.6869752</real>
+		<key>longitude</key>
+		<real>-105.937799</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Abilene, TX</string>
+		<key>latitude</key>
+		<real>32.4487364</real>
+		<key>longitude</key>
+		<real>-99.7331439</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Nashville, TN</string>
+		<key>latitude</key>
+		<real>36.1666667</real>
+		<key>longitude</key>
+		<real>-86.7833333</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Richmond, VA</string>
+		<key>latitude</key>
+		<real>37.5407246</real>
+		<key>longitude</key>
+		<real>-77.43604809999999</real>
+	</dict>
+</array>
+</plist>

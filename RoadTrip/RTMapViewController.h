@@ -11,4 +11,6 @@
 
 @interface RTMapViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+
 @end

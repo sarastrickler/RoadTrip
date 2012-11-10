@@ -26,6 +26,9 @@
 		5657DE70164B299400781CEF /* activitiesicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5657DE6F164B299400781CEF /* activitiesicon.png */; };
 		5657DE72164B2B5E00781CEF /* mapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5657DE71164B2B5E00781CEF /* mapicon.png */; };
 		5657DE74164B386C00781CEF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5657DE73164B386C00781CEF /* MapKit.framework */; };
+		5DB4684A164EE94400336C17 /* locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DB46849164EE94400336C17 /* locations.plist */; };
+		5DB4684D164F06A400336C17 /* RTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4684C164F06A400336C17 /* RTLocation.m */; };
+		5DB4684F164F0A3E00336C17 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB4684E164F0A3E00336C17 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,10 @@
 		5657DE6F164B299400781CEF /* activitiesicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activitiesicon.png; sourceTree = "<group>"; };
 		5657DE71164B2B5E00781CEF /* mapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapicon.png; sourceTree = "<group>"; };
 		5657DE73164B386C00781CEF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5DB46849164EE94400336C17 /* locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = locations.plist; sourceTree = "<group>"; };
+		5DB4684B164F06A400336C17 /* RTLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLocation.h; sourceTree = "<group>"; };
+		5DB4684C164F06A400336C17 /* RTLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLocation.m; sourceTree = "<group>"; };
+		5DB4684E164F0A3E00336C17 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB4684F164F0A3E00336C17 /* CoreLocation.framework in Frameworks */,
 				5657DE74164B386C00781CEF /* MapKit.framework in Frameworks */,
 				5657DE3B164B120D00781CEF /* UIKit.framework in Frameworks */,
 				5657DE3D164B120D00781CEF /* Foundation.framework in Frameworks */,
@@ -93,6 +101,7 @@
 		5657DE39164B120D00781CEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5DB4684E164F0A3E00336C17 /* CoreLocation.framework */,
 				5657DE73164B386C00781CEF /* MapKit.framework */,
 				5657DE3A164B120D00781CEF /* UIKit.framework */,
 				5657DE3C164B120D00781CEF /* Foundation.framework */,
@@ -118,10 +127,13 @@
 				5657DE6A164B291600781CEF /* RTMapViewController.h */,
 				5657DE6B164B291600781CEF /* RTMapViewController.m */,
 				5657DE6C164B291600781CEF /* RTMapViewController.xib */,
+				5DB4684B164F06A400336C17 /* RTLocation.h */,
+				5DB4684C164F06A400336C17 /* RTLocation.m */,
 				5657DE63164B1B9C00781CEF /* packinglisticon.png */,
 				5657DE6F164B299400781CEF /* activitiesicon.png */,
 				5657DE71164B2B5E00781CEF /* mapicon.png */,
 				5644072B164C0DB800DAD8C0 /* packing-list.plist */,
+				5DB46849164EE94400336C17 /* locations.plist */,
 				5657DE41164B120D00781CEF /* Supporting Files */,
 			);
 			path = RoadTrip;
@@ -199,6 +211,7 @@
 				5657DE72164B2B5E00781CEF /* mapicon.png in Resources */,
 				5644072C164C0DB800DAD8C0 /* packing-list.plist in Resources */,
 				56440732164C14E200DAD8C0 /* RTPackingListItemViewController.xib in Resources */,
+				5DB4684A164EE94400336C17 /* locations.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +228,7 @@
 				5657DE68164B290800781CEF /* RTActivitiesViewController.m in Sources */,
 				5657DE6D164B291600781CEF /* RTMapViewController.m in Sources */,
 				56440731164C14E200DAD8C0 /* RTPackingListItemViewController.m in Sources */,
+				5DB4684D164F06A400336C17 /* RTLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
